@@ -20,27 +20,40 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
           type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="{{ '/itsochi-mvp/css/landing-page.min.css' | url }}" rel="stylesheet">
-    <link href="{{ '/itsochi-mvp/override.css' | url }}" rel="stylesheet">
-
+    {% block head_js %}
+        <!-- Custom styles for this template -->
+        <link href="{{ '/itsochi-mvp/css/landing-page.min.css' | url }}" rel="stylesheet">
+        <link href="{{ '/itsochi-mvp/override.css' | url }}" rel="stylesheet">
+    {% endblock %}
 </head>
 
 <body>
-{% include "_nav.html" %}
 
-{% if this.generic %}
-    {% for blk in this.generic.blocks %}
-      {{ blk }}
-    {% endfor %}
-{% endif %}
+{# HEADER #}
+{% block head %}
+    {% include "_nav.html" %}
+{% endblock %}
 
-{% include "_footer.html" %}
+{# CONTENT #}
+{% block content %}
+    {% if this.generic %}
+        {% for blk in this.generic.blocks %}
+            {{ blk }}
+        {% endfor %}
+    {% endif %}
+{% endblock %}
 
-<!-- Bootstrap core JavaScript -->
-<script src="{{ '/itsochi-mvp/vendor/jquery/jquery.min.js' | url }}"></script>
-<script src="{{ '/itsochi-mvp/vendor/bootstrap/js/bootstrap.bundle.min.js' | url }}"></script>
+{# FOOTER #}
+{% block footer %}
+    {% include "_footer.html" %}
+{% endblock %}
+
+{# FOOTER JW CODE #}
+{% block footer_js %}
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ '/itsochi-mvp/vendor/jquery/jquery.min.js' | url }}"></script>
+    <script src="{{ '/itsochi-mvp/vendor/bootstrap/js/bootstrap.bundle.min.js' | url }}"></script>
+{% endblock %}
 
 </body>
-
 </html>

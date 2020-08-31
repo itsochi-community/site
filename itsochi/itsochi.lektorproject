@@ -1,3 +1,6 @@
 [project]
 name = itsochi
 themes = lektor-theme-itsochi, lektor-theme-itsochi-mvp
+
+[servers.ghpages]
+target = ghpages://itsochi-community/site

@@ -1,3 +1,3 @@
 [project]
 name = itsochi
-themes = lektor-theme-itsochi-mvp
+themes = lektor-theme-itsochi, lektor-theme-itsochi-mvp

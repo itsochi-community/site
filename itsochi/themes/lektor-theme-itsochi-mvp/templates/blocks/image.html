@@ -1,0 +1,6 @@
+{% set img = record.attachments.images.get(this.image) %}
+{% if img %}
+  <div class="thumbnail-block">
+    <img src="{{ img.thumbnail(480)|url }}" alt="">
+  </div>
+{% endif %}

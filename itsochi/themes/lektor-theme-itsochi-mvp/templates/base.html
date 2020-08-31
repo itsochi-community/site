@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IT-SOCHI - {% block title %}Welcome{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ '/itsochi-mvp/vendor/bootstrap/css/bootstrap.min.css' | url }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ '/itsochi-mvp/vendor/fontawesome-free/css/all.min.css' | url }}" rel="stylesheet">
+    <link href="{{ '/itsochi-mvp/vendor/simple-line-icons/css/simple-line-icons.css' | url }}" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ '/itsochi-mvp/css/landing-page.min.css' | url }}" rel="stylesheet">
+    <link href="{{ '/itsochi-mvp/override.css' | url }}" rel="stylesheet">
+
+</head>
+
+<body>
+{% include "_nav.html" %}
+
+{% if this.generic %}
+    {% for blk in this.generic.blocks %}
+      {{ blk }}
+    {% endfor %}
+{% endif %}
+
+{% include "_footer.html" %}
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ '/itsochi-mvp/vendor/jquery/jquery.min.js' | url }}"></script>
+<script src="{{ '/itsochi-mvp/vendor/bootstrap/js/bootstrap.bundle.min.js' | url }}"></script>
+
+</body>
+
+</html>

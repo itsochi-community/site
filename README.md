@@ -21,3 +21,11 @@ Run development server
 - Edit
 - Push 
 - Make PR to original repository 
+
+# Notes 
+
+## Building contributors page
+
+Is done via https://github.com/mgechev/github-contributors-list
+
+     githubcontrib --owner itsochi-community --repo site --cols 6 --showlogin true > CONTRIBUTERS.md

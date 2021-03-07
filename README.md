@@ -5,7 +5,8 @@ Install lektor SSG
     pip install lektor 
     
 Run development server
-    
+       
+    cd itsochi
     lektor server
 
 # For Editors 
@@ -26,6 +27,6 @@ Run development server
 
 ## Building contributors page
 
-Is done via https://github.com/mgechev/github-contributors-list
+You need https://github.com/mgechev/github-contributors-list to build CONTRIBUTORS.md
 
-     githubcontrib --owner itsochi-community --repo site --cols 6 --showlogin true > CONTRIBUTERS.md
+     githubcontrib --owner itsochi-community --repo site --cols 6 --showlogin true > CONTRIBUTORS.md

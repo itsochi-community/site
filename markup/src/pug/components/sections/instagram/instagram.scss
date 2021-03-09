@@ -1,0 +1,136 @@
+@import 'src/assets/styles/vars';
+
+.instagram {
+  background: $dark-color;
+  color: $white-color;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to bottom left, $white-color 50%, $dark-color 52%);
+    display: block;
+  }
+}
+
+.instagram-wrap {
+  padding: 72px 0 96px 0;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.instagram-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.instagram-title {
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 4px;
+}
+
+.instagram-subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 36px;
+}
+
+.instagram-icon {
+  path {
+    fill: $white-color;
+  }
+}
+
+.instagram-acc {
+  margin-left: 10px;
+}
+
+.pics-wrap {
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+.pics-item {
+  width: 280px;
+}
+
+.pics-img {
+  border-radius: 12px;
+}
+
+.instagram-subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.pics-pagination {
+  justify-content: center;
+  display: none;
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba($white-color, 0.4);
+    border-radius: 100%;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $primary-color;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .instagram-wrap {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .instagram:before {
+    height: 48px;
+  }
+
+  .instagram-wrap {
+    padding: 32px 24px 55px 24px;
+  }
+
+  .instagram-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .instagram-subtitle {
+    font-size: 16px;
+    line-height: 32px;
+
+    .arrow {
+      display: none;
+    }
+  }
+
+  .pics {
+    width: 85%;
+  }
+
+  .pics-pagination {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: $smPhoneWidth) {
+  .contacts-list {
+    width: 100%;
+  }
+
+  .pics {
+    width: 100%;
+  }
+}

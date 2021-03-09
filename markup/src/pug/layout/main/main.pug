@@ -1,0 +1,35 @@
+include ../../../../node_modules/bemto.pug/bemto
+- set_bemto_settings({ prefix: '', element: '-', modifier: '_' });
+
+include ../../components/layout/header/header
+include ../../components/layout/footer/footer
+include ../../components/sections/hello/hello
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="theme-color" content="#ffffff")
+    title #{title}
+    meta(name="description", content=description)
+    block head
+  +b.BODY.page(class=pageClass)
+    +mobileMenu()
+    +e.top
+      +e.header
+        +header()
+      +hello()
+    +e.content
+      block content
+    +e.footer
+      +footer()
+    +popupJoin()
+    +popupSuccess()

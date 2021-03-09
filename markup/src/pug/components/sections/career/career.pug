@@ -1,0 +1,29 @@
+mixin career()
+  +b.SECTION.career#career
+    +e.wrap
+      +e.sea
+        +b.svg(src="/assets/img/career/sea.svg")
+      +e.content
+        +e.description
+          +e.H1.title
+            | Карьера с IT Sochi
+          +e.text
+            | Присоединяй к сообществу, чтобы получать лучшие
+            +b.BR
+            | предложения от ведущих компаний страны
+          +e.action
+            +button('Присоединиться к сообществу')._color_yellow._clip
+              +e.SPAN.icon
+                include /assets/img/icons/arrow-right.svg
+            +button('О вакансиях и работе')._color_transparent._border_white
+              +e.SPAN.icon
+                include /assets/img/icons/arrow-right.svg
+          +b.company
+            +e.item
+              +e.img(src="/assets/img/career/company/weyes.svg")
+            +e.item
+              +e.img(src="/assets/img/career/company/tink.svg")
+            +e.item
+              +e.img(src="/assets/img/career/company/URBAMATICA.svg")
+          +e.family
+            +b.svg(src="/assets/img/career/taxi-family.svg")

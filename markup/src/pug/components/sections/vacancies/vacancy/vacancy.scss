@@ -1,0 +1,103 @@
+@import 'src/assets/styles/vars';
+
+.vacancy {
+  padding: 28px 0 28px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba($white-color, 0.2);
+  }
+}
+
+.vacancy-left {
+  display: flex;
+  align-items: center;
+}
+
+.vacancy-title {
+  margin-right: 8px;
+  color: $white-color;
+}
+
+.vacancy-position {
+  padding: 2px 8px;
+  background: $white-color;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vacancy-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vacancy-looking {
+  color: rgba($white-color, 0.6);
+  margin-right: 4px;
+}
+
+.vacancy-who {
+  font-weight: bold;
+  margin-right: 24px;
+}
+
+.vacancy-arrow svg {
+  fill: rgba($white-color, 0.2);
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (max-width: $tableWidth) {
+  .vacancy-title {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .vacancy {
+    padding: 16px;
+    background: #282828;
+    border-radius: 12px;
+    border: none !important;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid rgba($white-color, 0.2);
+    }
+  }
+
+  .vacancy-right {
+    margin-bottom: 108px;
+  }
+
+  .vacancy-position {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .vacancy-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+  }
+
+
+  .vacancy-who {
+    margin: 0;
+  }
+}

@@ -1,0 +1,4 @@
+mixin input(label, name, type = 'text')
+  +b.input()
+    +e.label(for= name)= label
+    +e.INPUT.input(type= type name= name id=name)

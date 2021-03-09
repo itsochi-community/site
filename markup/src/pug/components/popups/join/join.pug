@@ -1,0 +1,22 @@
+mixin popupJoin()
+  +b.popup._join&attributes(attributes)
+    +e.bg
+    +e.wrap
+      +e.content
+        +e.header
+          +e.title
+            | Присоединиться
+            +b.BR
+            | к сообществу
+          +e.close
+            include /assets/img/icons/close.svg
+        +e.body
+          +e.FORM.form
+            +e.group
+              +input('Имя', 'name')
+            +e.group
+              +input('Email', 'email', 'email')
+            +e.action._pos_right
+              +button('Присоедениться', 'submit')._color_yellow
+                +e.SPAN.icon
+                  include /assets/img/icons/arrow-right.svg

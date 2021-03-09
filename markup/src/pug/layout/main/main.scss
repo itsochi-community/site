@@ -1,0 +1,62 @@
+@import 'src/assets/styles/main';
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-top {
+  padding-top: 24px;
+  background: $primary-color;
+  margin-bottom: 85px;
+  overflow: hidden;
+}
+
+.page-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .page-top {
+    margin-bottom: 24px;
+  }
+}

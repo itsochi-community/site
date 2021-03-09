@@ -1,0 +1,13 @@
+.toogleMenu {
+  display: none;
+  padding: 12px 16px;
+  border: 1px solid #F2F2F2;
+  border-radius: 12px;
+}
+
+
+@media screen and (max-width: $tableWidth) {
+  .toogleMenu {
+    display: block;
+  }
+}

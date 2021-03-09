@@ -1,0 +1,103 @@
+@import 'src/assets/styles/vars';
+
+.popup, .popup-bg {
+  position: fixed;
+  align-items: flex-end;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.popup {
+  display: none;
+  z-index: 100;
+  margin-bottom: 64px;
+}
+
+.popup_active {
+  display: flex;
+}
+
+.popup-bg {
+  background: rgba($dark-color, 0.8);
+}
+
+.popup_active {
+  display: flex;
+}
+
+.popup-wrap {
+  background: #fff;
+  width: 628px;
+  position: relative;
+  border-radius: 12px;
+}
+
+.popup-content {
+  padding: 24px 32px;
+}
+
+.popup-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-successImg {
+  margin-bottom: 16px;
+}
+
+.popup-mainText, .popup-subText {
+  text-align: center;
+}
+
+.popup-mainText {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 6px;
+}
+
+.popup-subText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup-close {
+  position: absolute;
+  top: -32px;
+  right: 8px;
+  cursor: pointer;
+
+  path {
+    fill: $white-color
+  }
+}
+
+.popup-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.popup-action_pos_right {
+  justify-content: flex-end;
+}
+
+.popup-action_pos_left {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .popup {
+    margin: 0 16px 40px 16px;
+  }
+
+  .popup-wrap {
+    width: 100%;
+  }
+}
+

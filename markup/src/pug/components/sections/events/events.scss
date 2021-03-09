@@ -1,0 +1,334 @@
+@import 'src/assets/styles/vars';
+
+.events {
+  overflow: hidden;
+}
+
+.events-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+}
+
+.events-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.events-description {
+  max-width: 673px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.events-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.events-actions {
+  display: flex;
+  margin-bottom: 72px;
+}
+
+.mainEvent {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.mainEvent-wrap {
+  padding: 32px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.mainEvent-bg, .mainEvent-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+}
+
+.mainEvent-bg {
+  background: rgba($purple-color, .8);
+}
+
+.mainEvent-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainEvent-content {
+  color: $white-color;
+}
+
+.mainEvent-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mainEvent {
+  margin-bottom: 40px;
+}
+
+.mainEvent-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mainEvent-note {
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+.mainEvent-date {
+  margin-right: 24px;
+
+  svg {
+    fill: $white-color;
+    margin-right: 11px;
+  }
+}
+
+.mainEvent-register {
+  display: flex;
+  align-items: center;
+}
+
+.mainEvent-register:before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: $red-color;
+}
+
+.mainEvent-register_open:before {
+  background: $green-color;
+}
+
+.allInvite {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.allInvite-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.allInvite-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.allInvite-wrap {
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+.allInvite-pagination {
+  justify-content: center;
+  display: none;
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #F4F3FD;
+    border-radius: 100%;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $dark-color;
+  }
+}
+
+.event {
+  width: 310px;
+  height: 450px;
+  box-sizing: initial;
+  border-radius: 12px;
+}
+
+.event-wrap {
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  height: 100%;
+}
+
+.event_open {
+  .event-bg {
+    background: rgba($purple-color, .8);
+  }
+
+  .event-title {
+    color: $orange-color;
+  }
+}
+
+.event-bg {
+  background: rgba($grey-color, .8);
+}
+
+.event-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.event-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-pic {
+  position: relative;
+}
+
+.event-img, .event-bg {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.event-register {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.event-register:before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: $red-color;
+}
+
+.event-register_open:before {
+  background: $green-color;
+}
+
+.event-content {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.event-date {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: #0C0D10;
+    margin-right: 11px;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .events-wrap {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .mainEvent-img, .event-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .events-wrap {
+    padding: 0 24px;
+  }
+
+  .events-title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .mainEvent-wrap {
+    padding: 24px;
+  }
+
+  .mainEvent {
+    height: 100vh;
+  }
+
+  .mainEvent-img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .mainEvent-note {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+
+  .mainEvent-date {
+    margin: 0 0 8px 0;
+  }
+  .mainEvent-date svg {
+    margin-right: 8px;
+  }
+
+  .events-actions {
+    display: none;
+  }
+
+  .allInvite-pagination {
+    display: flex;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../../../assets/styles/vars';
+
+.menu {
+  display: flex;
+  height: 100%;
+}
+
+.menu-list{
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+
+  height: 100%;
+  &:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}
+
+.menu-link {
+  padding: 0 8px;
+  color: $mainFontColor;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &:hover:after {
+    background: #000000;
+  }
+}
+
+.menu-link_active:after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-more {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .menu-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-link {
+    font-size: 20px;
+    line-height: 16px;
+    padding: 24px 8px;
+    margin: 0;
+  }
+}

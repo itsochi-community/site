@@ -1,0 +1,12 @@
+mixin button(text, type = "button")
+  if type === "submit"
+    +b.INPUT.button(type="submit" value= text)&attributes(attributes)
+      block
+  else if type === 'link'
+    +b.button(href="#")&attributes(attributes)
+      +e.SPAN.text= text
+      block
+  else
+    +b.BUTTON(type="button").button&attributes(attributes)
+      +e.SPAN.text= text
+      block

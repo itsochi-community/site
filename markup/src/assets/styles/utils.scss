@@ -1,0 +1,15 @@
+@mixin button-reset() {
+    background-color: transparent;
+    border: none;
+}
+
+@mixin list-reset() {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+@function _col($n) {  
+    @return ($n * 100%) / 12;  
+}

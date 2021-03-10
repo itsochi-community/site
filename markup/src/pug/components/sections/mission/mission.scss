@@ -1,0 +1,291 @@
+@import 'src/assets/styles/vars';
+
+.mission {
+  overflow: hidden;
+  margin-bottom: 72px;
+}
+
+.mission-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+}
+
+.mission-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.mission-description {
+  max-width: 673px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mission-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 56px;
+}
+
+.mission-center {
+  height: 80px;
+  position: relative;
+}
+
+.mission-ellipse {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: $primary-color;
+  margin: 0 auto;
+}
+
+.mission-sea {
+  position: absolute;
+  z-index: 0;
+  top: 80px;
+  right: -30px;
+}
+
+.mission-points {
+  position: absolute;
+  z-index: 0;
+  top: -75px;
+  left: -130px;
+}
+
+.mission-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mission-about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+
+.whoWe {
+  width: 50%;
+}
+
+.weAre {
+  width: 30%;
+}
+
+.weAre-title, .whoWe-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.weAre-specialists {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.whoWe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.mission-blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.block {
+  width: 33.333%;
+}
+
+.block-wrap {
+  background: $white-color;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.block-content {
+  padding: 0 24px 24px 24px;
+}
+
+.block-pic {
+  margin-bottom: 8px;
+}
+
+.block-img {
+  width: 100%;
+}
+
+.block-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.block-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mission-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.missions {
+  width: 100%;
+}
+
+.missions-wrap {
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+.missions-pagination {
+  justify-content: center;
+  display: none;
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #F4F3FD;
+    border-radius: 100%;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $dark-color;
+  }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .mission-wrap {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .weAre {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .mission-points, .mission-sea {
+    display: none;
+  }
+
+  .mission-about {
+    flex-direction: column;
+  }
+
+  .whoWe {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .weAre {
+    width: 100%;
+    padding: 24px;
+    background: $primary-color;
+    border-radius: 12px;
+  }
+
+  .mission-actions {
+    flex-wrap: wrap;
+
+    .socials-item {
+      height: 56px;
+    }
+
+    .button {
+      margin-bottom: 16px;
+    }
+
+    .socials {
+      width: 200px;
+      margin: 0 !important;
+    }
+
+    .socials-list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .socials-item {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .mission {
+    margin-bottom: 48px;
+  }
+
+  .mission-wrap {
+    margin: 0 24px;
+  }
+
+  .mission-title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .mission-text {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .mission-center {
+    margin-bottom: 24px;
+  }
+
+  .mission-ellipse {
+    position: absolute;
+    left: -64px;
+    top: 0;
+  }
+
+  .weAre-specialists {
+    font-size: 32px;
+    line-height: 24px;
+  }
+
+  .whoWe-title {
+    margin-bottom: 16px;
+  }
+
+  .mission-about {
+    margin-bottom: 16px;
+  }
+
+  .mission-blocks {
+    flex-wrap: wrap;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .missions-pagination {
+    display: flex;
+  }
+}
+

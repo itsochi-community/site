@@ -1,0 +1,19 @@
+mixin menu()
+  +b.menu
+    +e.UL.list
+      +e.LI.item  
+        +e.A.link(href="#hello") О нас
+      +e.LI.item
+        +e.A.link(href="#events") Мероприятия
+      +e.LI.item
+        +e.A.link(href="#career") Карьера
+      +e.LI.item
+        +e.A.link(href="#blog") Блог
+      +e.LI.item
+        +e.A.link(href="#mission") Миссия
+      +e.LI.item
+        +e.A.link(href="#contacts") Контакты
+      +e.LI.item._last
+        +e.A.link(href="#") Еще
+          +e.DIV.more
+            +e.IMG(src='/assets/img/icons/more.svg')

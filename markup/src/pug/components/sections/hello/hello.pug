@@ -1,0 +1,23 @@
+mixin hello()
+  +b.SECTION.hello#hello
+    +e.wrap
+      +e.points
+        +b.svg(src="/assets/img/hello/points.svg")
+      +e.sea
+        +b.svg(src="/assets/img/hello/sea.svg")
+      +e.girl
+        +b.svg(src="/assets/img/hello/girl.svg")
+      +e.description
+        +e.H1.title
+          | IT Sochi делает лучший
+          +b.BR
+          | мир с людьми и техолногиями
+        +e.cloud
+          +b.svg(src="/assets/img/icons/cloud.svg")
+        +e.text IT Sochi был переработан, чтобы предоставить обширную информацию, такую, как технические события, открытые источники, спонспорство, рекрутинг и обучение
+        +e.action
+          +button('Присоединиться к сообществу')._clip.open-popup
+            +e.SPAN.icon
+              include /assets/img/icons/arrow-right.svg
+      +e.swim
+        +b.svg(src="/assets/img/hello/swim.svg")

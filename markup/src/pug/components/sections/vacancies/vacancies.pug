@@ -1,0 +1,18 @@
+mixin vacancies()
+  +b.SECTION.vacancies#vacancies
+    +e.wrap
+      +e.content
+        +e.description
+          +e.H1.title
+            | Самые&nbsp;
+            +b.span свежие&nbsp;
+            | вакансии в 🌴 Сочи
+          +e.list
+            +vacancy('Frontend-разработчик', 'Middle', 'Tinkoff')
+            +vacancy('Node.js / React.js программист', 'Middle', 'Яндекс')
+            +vacancy('Team Lead Front-end', 'Teamlead', 'Acme Crypto Corp.')
+            +vacancy('ReactJS разработчик в команду дейтинг-стартапа...', 'Middle +', 'Dater')
+          +e.actions
+            +button('Больше вакансий')._color_transparent._border_white
+              +e.SPAN.icon
+                include /assets/img/icons/arrow-right.svg

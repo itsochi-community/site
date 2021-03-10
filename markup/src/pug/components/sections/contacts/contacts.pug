@@ -1,0 +1,47 @@
+mixin contacts()
+  +b.SECTION.contacts#contacts
+    +e.wrap
+      +e.woman
+        +b.svg(src="/assets/img/contacts/woman.svg")
+      +e.sea
+        +b.svg(src="/assets/img/contacts/sea.svg")
+      +e.content
+        +e.title Остались вопросы?
+        +e.subtitle Мы с радостью ответим
+        +e.list
+          +e.item
+            include /assets/img/contacts/email.svg
+            +e.value(href="mailto:hello@itsochi.ru") hello@itsochi.ru
+          +e.item
+            include /assets/img/contacts/people.svg
+            +e.value Организаторы и контрибьютеры
+          +e.sepor
+          +e.item
+            include /assets/img/icons/socials/telegram.svg
+            +e.value(href="#" target="_blank") @itsochi
+              include /assets/img/icons/arrow-right.svg
+          +e.item
+            include /assets/img/icons/socials/instagram.svg
+            +e.value(href="http://instagram.com/itsochi" target="_blank") inst.com / itsochi
+          +e.item
+            include /assets/img/icons/socials/vk.svg
+            +e.value(href="http://vk.com/itsochi" target="_blank") vk.com / itsochi
+          +e.item
+            include /assets/img/icons/socials/facebook.svg
+            +e.value(href="http://facebook.com/itsochi" target="_blank") facebook.com / itsochi
+          +e.item
+            include /assets/img/icons/socials/youtube.svg
+            +e.value(href="http://youtube.com/itsochi" target="_blank") youtube.com / itsochi
+        +e.logo
+          +logo()
+        +b.github
+          +e.content
+            +e.title Этот сайт с открытым исходным кодом
+            +e.text Поможете его улучшить?
+          +e.fork(href="#" target="_blank")
+            include /assets/img/contacts/git.svg
+            | Fork on Github
+        +e.footer
+          +e.link Политика безопасности
+          +e.slash /
+          +e.text &#169; Все права защищены

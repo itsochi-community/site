@@ -1,0 +1,6 @@
+mixin toogleMenu(isOpen = false)
+  +b.toogleMenu&attributes(attributes)
+    if isOpen
+      +e.img(src="/assets/img/icons/close.svg")
+    else
+      +e.img(src="/assets/img/icons/menu.svg")

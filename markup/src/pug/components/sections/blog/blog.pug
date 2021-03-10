@@ -1,0 +1,54 @@
+mixin blog()
+  +b.SECTION.blog#blog
+    +e.wrap
+      +e.content
+        +e.H1.title Блог
+        +e.header
+          +e.subtitle Мы пишем
+            +arrow()
+        +b.articles
+          +e.wrap
+            +b.article
+              +e.wrap
+                +e.date
+                  +b.B 24 марта&nbsp;
+                  | в 13:30
+                +e.pic
+                  +e.img(src="/assets/img/events/event1.jpg")
+                +e.content
+                  +e.title Осень. Сочи. Стажировка
+                  +e.description Приглашаем начинающих фронтендеров, бэкендеров, мобильных разработчиков, аналитиков и специалистов по машинному обучению...
+            +b.article
+              +e.wrap
+                +e.date
+                  +b.B 24 марта&nbsp;
+                  | в 13:30
+                +e.pic
+                  +e.img(src="/assets/img/events/event1.jpg")
+                +e.content
+                  +e.title «Я так вижу»: Нейростеть рисует картины на заказ
+                  +e.description Нейросеть работает в разных жанрах: может нарисовать портрет, пейзаж, натюрморт или абстракцию.
+            +b.article
+              +e.wrap
+                +e.date
+                  +b.B 24 марта&nbsp;
+                  | в 13:30
+                +e.pic
+                  +e.img(src="/assets/img/events/event1.jpg")
+                +e.content
+                  +e.title Чемпионат Сочи по программированию: регистрация открыта
+            +b.article
+              +e.wrap
+                +e.date
+                  +b.B 24 марта&nbsp;
+                  | в 13:30
+                +e.pic
+                  +e.img(src="/assets/img/events/event1.jpg")
+                +e.content
+                  +e.title Чемпионат Сочи по программированию: регистрация открыта
+          +e.pagination
+        +e.actions
+          +button('Посмотреть все')._color_transparent
+            +e.SPAN.icon
+              include /assets/img/icons/arrow-right.svg
+          +socials()._inContent

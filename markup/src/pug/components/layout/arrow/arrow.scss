@@ -1,0 +1,49 @@
+.arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin-left: 16px;
+
+  svg {
+    fill: $dark-color;
+  }
+}
+
+.arrow_color_white {
+  svg {
+    fill: $white-color;
+  }
+
+  .arrow-left.disabled, .arrow-right.disabled {
+    svg {
+      fill: rgba($white-color, 0.2);
+    }
+  }
+
+  .arrow-sepor {
+    color: $grey-color
+  }
+}
+
+.arrow-sepor {
+  font-weight: 900;
+  font-size: 24px;
+  color: #F2F2F2;
+  padding: 0 8px;
+}
+
+.arrow-left, .arrow-right {
+  display: flex;
+  cursor: pointer;
+}
+
+.arrow-left.disabled, .arrow-right.disabled {
+  cursor: default;
+  svg {
+    fill: rgba($dark-color, 0.2);
+  }
+}
+
+.arrow_color_white {
+
+}

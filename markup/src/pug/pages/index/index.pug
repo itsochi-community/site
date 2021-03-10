@@ -1,0 +1,34 @@
+extends ../../layout/main/main
+
+include ../../components/UI/logo/logo
+include ../../components/layout/menu/menu
+include ../../components/layout/socials/socials
+include ../../components/sections/mission/mission
+include ../../components/sections/events/events
+include ../../components/sections/career/career
+include ../../components/sections/vacancies/vacancies
+include ../../components/sections/vacancies/vacancy/vacancy
+include ../../components/sections/blog/blog
+include ../../components/sections/contacts/contacts
+include ../../components/sections/instagram/instagram
+include ../../components/layout/arrow/arrow
+include ../../components/UI/button/button
+include ../../components/UI/toogleMenu/toogleMenu
+include ../../components/UI/input/input
+include ../../components/layout/mobileMenu/mobileMenu
+include ../../components/popups/join/join
+include ../../components/popups/success/success
+
+block variables
+  - var title = 'IT Sochi';
+  - var description = 'Сочинское ИТ сообщество';
+  - var pageClass = '_page';
+
+block content
+  +mission()
+  +events()
+  +career()
+  +vacancies()
+  +blog()
+  +contacts()
+  +instagram()

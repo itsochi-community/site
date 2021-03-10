@@ -1,0 +1,17 @@
+mixin popupSuccess()
+  +b.popup._success&attributes(attributes)
+    +e.bg
+    +e.wrap
+      +e.content
+        +e.header
+          +e.close
+            include /assets/img/icons/close.svg
+        +e.body
+          +e.center
+            +e.successImg(src="/assets/img/popup/checkmark.svg")
+            +e.mainText Отправлено!
+            +e.subText Небольшое пояснение
+          +e.action
+            +button('Класс!')._color_yellow
+              +e.SPAN.icon
+                include /assets/img/icons/close.svg

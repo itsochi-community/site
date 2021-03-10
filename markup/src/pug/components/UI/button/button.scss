@@ -1,0 +1,93 @@
+@import '../../../../assets/styles/vars';
+
+.button {
+  color: $white-color;
+  padding: 16px 24px;
+  height: 56px;
+  background: $dark-color;
+  border: 2px solid $dark-color;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Montserrat;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.button-icon {
+  margin-left: 10px;
+
+  svg {
+    fill: $white-color;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button_color_yellow {
+  background: $primary-color;
+  border: none;
+  color: $mainFontColor;
+
+  &:hover {
+    color: $mainFontColor;
+    text-decoration: none;
+  }
+
+  svg {
+    fill: $mainFontColor
+  }
+}
+
+.button_color_transparent {
+  background: transparent;
+  color: $mainFontColor;
+
+  &:hover {
+    color: $mainFontColor;
+    text-decoration: none;
+  }
+
+  svg {
+    fill: $mainFontColor
+  }
+}
+
+.button_border_white {
+  color: $white-color;
+  border-color: $white-color;
+
+  svg {
+    fill: $white-color;
+
+  }
+
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .button_clip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button-text {
+      width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: clip;
+      resize: none;
+      display: inline-block;
+    }
+  }
+}

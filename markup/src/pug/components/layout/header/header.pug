@@ -1,0 +1,11 @@
+mixin header()
+  +b.HEADER.header
+    +e.wrap
+      +e.left
+        +e.logo
+          +logo()
+        +e.menu
+          +menu()
+      +e.right
+        +socials()(class="header-socials")
+        +toogleMenu()._open

@@ -1,0 +1,135 @@
+@import 'src/assets/styles/vars';
+
+.hello {
+  background: $primary-color;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to top right, $white-color 50%, $primary-color 52%);
+    display: block;
+  }
+}
+
+.hello-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 56px 0;
+}
+
+.hello-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.hello-description {
+  max-width: 673px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hello-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 56px;
+}
+
+.hello-action {
+  text-align: center;
+}
+
+.hello-cloud{
+  position: absolute;
+  top: 0;
+  left: 65px;
+  z-index: 0;
+}
+
+.hello-sea {
+  position: absolute;
+  z-index: 0;
+  top: 33px;
+  left: -46px;
+}
+
+.hello-girl {
+  position: absolute;
+  z-index: 0;
+  top: 76px;
+  left: -88px;
+}
+
+.hello-swim {
+  position: absolute;
+  z-index: 0;
+  bottom: 2px;
+  right: -134px;
+}
+
+.hello-points {
+  position: absolute;
+  top: -105px;
+  right: 135px;
+}
+
+@media screen and (max-width: $mdDesktopWidth) {
+  .hello-girl {
+    left: -240px;
+  }
+
+  .hello-swim {
+    right: -280px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .hello-girl, .hello-sea, .hello-points, .hello-cloud {
+    display: none;
+  }
+
+  .hello-wrap {
+    padding: 0 24px 400px 24px;
+  }
+
+  .hello-swim {
+    right: 2px;
+    width: 577px;
+  }
+  .hello-action {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .hello:after {
+    height: 48px;
+  }
+
+  .hello-title {
+    text-align: left;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hello-text {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .hello-swim {
+    z-index: 0;
+    bottom: -20px;
+    right: -202px;
+  }
+}

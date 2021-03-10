@@ -1,0 +1,91 @@
+mixin events()
+  +b.SECTION.events#events
+    +e.wrap
+      +e.description
+        +e.H1.title Мероприятия
+      +e.content
+        +b.mainEvent
+          +e.img(src="/assets/img/events/main.jpg")
+          +e.bg
+          +e.wrap
+            +e.content
+              +e.title Digital Sochi 2021:&nbsp;
+                +b.BR
+                | конференция Яндекса для бизнеса
+              +e.description Вы узнаете, какие товары и услуги пользуются особым спросом на локальном поиске Яндекса. Спикеры расскажут, как начать продвижение, находить и удерживать клиентов в интернете с помощью рекламных инструментов Яндекса.
+                +e.note
+                  +e.date
+                    include /assets/img/events/date.svg
+                    | 24 марта 2021
+                  +e.register._open Регистрация открыта
+        +b.allInvite
+          +e.header
+            +e.title Все инвайты
+            +arrow()
+          +e.eventList
+            +e.wrap
+              +b.event._open
+                +e.wrap
+                  +e.pic
+                    +e.img(src="/assets/img/events/event1.jpg")
+                    +e.bg
+                    +e.register._open Регистрация открыта
+                  +e.content
+                    +e.title Digital Sochi 2021:&nbsp; конференция Яндекса для бизнеса
+                    +e.date
+                      include /assets/img/events/date.svg
+                      +b.B 24 марта&nbsp;
+                      | 2021
+              +b.event
+                +e.wrap
+                  +e.pic
+                    +e.img(src="/assets/img/events/event2.jpg")
+                    +e.bg
+                    +e.register Регистрация окончена
+                  +e.content
+                    +e.title Практический вебинар: новые возможности DataSphere
+                    +e.date
+                      include /assets/img/events/date.svg
+                      +b.B 24 марта&nbsp;
+                      | 2021
+              +b.event
+                +e.wrap
+                  +e.pic
+                    +e.img(src="/assets/img/events/event3.jpg")
+                    +e.bg
+                    +e.register Регистрация окончена
+                  +e.content
+                    +e.title Практикум DataLens
+                    +e.date
+                      include /assets/img/events/date.svg
+                      +b.B 24 марта&nbsp;
+                      | 2021
+              +b.event
+                +e.wrap
+                  +e.pic
+                    +e.img(src="/assets/img/events/event3.jpg")
+                    +e.bg
+                    +e.register Регистрация окончена
+                  +e.content
+                    +e.title Практикум DataLens
+                    +e.date
+                      include /assets/img/events/date.svg
+                      +b.B 24 марта&nbsp;
+                      | 2021
+              +b.event
+                +e.wrap
+                  +e.pic
+                    +e.img(src="/assets/img/events/event3.jpg")
+                    +e.bg
+                    +e.register Регистрация окончена
+                  +e.content
+                    +e.title Практикум DataLens
+                    +e.date
+                      include /assets/img/events/date.svg
+                      +b.B 24 марта&nbsp;
+                      | 2021
+            +e.pagination
+        +e.actions
+          +button('Посмотреть все')._color_transparent
+            +e.SPAN.icon
+              include /assets/img/icons/arrow-right.svg

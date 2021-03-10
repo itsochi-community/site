@@ -1,0 +1,47 @@
+@import 'src/assets/styles/vars';
+
+.mobileMenu {
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-1000px);
+  visibility: hidden;
+  transition: all 0.4s ease;
+
+  background: $white-color;
+  z-index: 10;
+}
+
+.mobileMenu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  padding: 0 24px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.mobileMenu-logo {
+  width: 132px;
+}
+
+.mobileMenu-menu {
+  padding: 24px 24px 0 24px;
+}
+
+.mobileMenu-social {
+  padding: 0 24px 24px 24px;
+}
+
+@media screen and (max-width: $tableWidth) {
+  .mobileMenu_open {
+    transform: translateY(0px);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

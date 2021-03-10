@@ -1,0 +1,183 @@
+@import 'src/assets/styles/vars';
+
+.blog {
+  margin-bottom: 85px;
+  overflow: hidden;
+}
+
+.blog-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 72px 0 0 0;
+}
+
+.blog-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+
+.blog-header {
+  margin-bottom: 24px;
+}
+
+.blog-subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articles {
+  margin-bottom: 24px;
+}
+
+.articles-wrap {
+  display: inline-flex;
+  margin-bottom: 16px;
+}
+
+.articles-pagination {
+  justify-content: center;
+  display: none;
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #F4F3FD;
+    border-radius: 100%;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $dark-color;
+  }
+}
+
+.article {
+  width: 310px;
+  box-sizing: initial;
+  border-radius: 12px;
+}
+
+.article-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  height: 100%;
+}
+
+.article-date {
+  margin-bottom: 24px;
+}
+
+.article-pic {
+  margin-bottom: 24px;
+}
+
+.article-img {
+  border-radius: 12px;
+  display: block;
+}
+
+.article-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .blog-wrap {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: $tableWidth) {
+  .article-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .blog-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .socials-item {
+      height: 56px;
+    }
+
+    .button {
+      margin-bottom: 16px;
+    }
+
+    .socials {
+      width: 200px;
+      margin: 0 !important;
+    }
+
+    .socials-list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .socials-item {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .blog {
+    margin-bottom: 0;
+  }
+
+  .blog-wrap {
+    padding: 24px;
+
+  }
+  .blog-title {
+    display: none;
+  }
+
+  .blog-header {
+    margin-bottom: 16px;
+  }
+
+  .blog-actions {
+    display: none;
+  }
+
+  .articles-pagination {
+    display: flex;
+  }
+}
+
+

@@ -1,0 +1,10 @@
+mixin vacancy(title, position, who)
+  +b.vacancy
+    +e.left
+      +e.title(href="#")= title
+      +e.position= position
+    +e.right
+      +e.looking ищут в
+      +e.who= who
+      +e.arrow
+        include /assets/img/icons/arrow-right.svg

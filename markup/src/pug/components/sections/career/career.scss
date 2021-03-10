@@ -1,0 +1,163 @@
+@import 'src/assets/styles/vars';
+
+.career {
+  background: $dark-color;
+  color: $white-color;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to bottom left, $white-color 50%, $dark-color 52%);
+    display: block;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(to left top, $grey-color 50%, $dark-color 52%);
+    display: block;
+  }
+}
+
+.career-wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 0 140px 0;
+}
+
+.career-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.career-description {
+  position: relative;
+}
+
+.career-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 16px;
+  color: #FECE2F;
+  position: relative;
+  z-index: 1;
+}
+
+.career-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.career-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 1;
+
+  .button:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+}
+
+.career-sea {
+  position: absolute;
+  z-index: 0;
+  left: -61px;
+  top: 179px;
+}
+
+.company {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.company-item {
+  &:not(:last-of-type):after {
+    content: '❤️';
+    width: 24px;
+    margin: 0 24px 0 24px;
+  }
+}
+
+.career-family {
+  position: absolute;
+  top: 0;
+  right: -75px;
+  z-index: 0;
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+  .career-wrap {
+    margin: 0 40px;
+  }
+}
+
+@media only screen and (max-width: $tableWidth) {
+  .career-wrap {
+    padding: 24px;
+  }
+
+  .company {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .company-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+
+      .company-img {
+        margin-bottom: 16px;
+      }
+
+      &:after {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .career-family{
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mdPhoneWidth) {
+  .career:after, .career:before {
+    height: 48px;
+  }
+
+  .career-sea {
+    display: none;
+  }
+
+  .career-title {
+    width: 50%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .career-action {
+    .button {
+      width: 100%;
+    }
+  }
+}

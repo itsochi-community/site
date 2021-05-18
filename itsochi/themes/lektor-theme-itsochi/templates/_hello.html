@@ -8,14 +8,14 @@
         <div class="hello-girl"><img class="svg" src="{{ '/img/hello/girl.svg' | url }}" alt=""
                                      role="presentation"/></div>
         <div class="hello-description"><h1 class="hello-title">{% block title %}
-            {{ this.title }}
+            {{ this.title | safe }}
         {% endblock %}</h1>
             <div class="hello-cloud"><img class="svg" src="{{ '/img/icons/cloud.svg' | url }}" alt=""
                                           role="presentation"/>
             </div>
             <div class="hello-text">
                 {% block body %}
-                    {{ this.body }}
+                    {{ this.body | safe }}
                 {% endblock %}
             </div>
             <div class="hello-action">

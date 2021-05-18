@@ -69,9 +69,12 @@
 }, function (e, t) {
     if (window.location.pathname === '/') {
         document.querySelectorAll(".menu-link").forEach((function (e) {
-
             e.addEventListener("click", (function (e) {
-                e.preventDefault(), document.querySelector(this.getAttribute("href").split('/')[1]).scrollIntoView({behavior: "smooth"})
+                var path = this.getAttribute("href").split('/')[1];
+                if(path && path[0] == "#") {
+                    e.preventDefault();
+                    document.querySelector(path).scrollIntoView({behavior: "smooth"});
+                }
             }))
         }))
     }

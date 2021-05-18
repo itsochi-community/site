@@ -1,0 +1,26 @@
+<div class="page-header">
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a class="logo" href="{{ "/index.html" | url }}"><img class="logo-img"
+                                                                          src="{{ '/img/logo.svg'|url }}" alt=""
+                                                                          role="presentation"/>
+                    </a>
+                </div>
+                <div class="header-menu">
+                    {% include "_menu_list.html" %}
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="socials header-socials">
+                    {% include "blocks_to_include/_list_of_social_links.html" %}
+                </div>
+                <div class="toogleMenu toogleMenu_open"><img class="toogleMenu-img"
+                                                             src="{{ '/img/icons/menu.svg' | url }}"
+                                                             alt=""
+                                                             role="presentation"/></div>
+            </div>
+        </div>
+    </header>
+</div>

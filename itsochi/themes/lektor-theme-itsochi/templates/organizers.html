@@ -1,0 +1,178 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    {% include '_header_menu_mobile.html' %}
+    <div class="page-top" style="background-color: transparent; margin-bottom: 0">
+        {% include "_header_menu.html" %}
+    </div>
+
+    <section class="organizers">
+        <div class="organizers-wrap">
+
+            <div class="organizers-header">
+                <h1 class="organizers-title">Организаторы</h1>
+            </div>
+
+
+            <div class="organizers-list">
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/bershadsky.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Сергей Бершадский
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            bershadsky
+                        </div>
+                        <div class="organizers-text">
+                            Организатор IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                        <img src="{{ "/img/organizers/shum.jpg" | url }}" class="organizers-img" alt="">
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Павел Шум
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            themaccle
+                        </div>
+                        <div class="organizers-text">
+                           Организатор IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/alenabulg.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Алена Булгакова
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            AlenaSochi
+                        </div>
+                        <div class="organizers-text">
+                            Организатор мероприятий IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/ekaterinapam.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Екатерина Пам
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            katya_pam
+                        </div>
+                        <div class="organizers-text">
+                           Креатор в IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="organizers-header">
+                <h1 class="organizers-title">Контрибьюторы</h1>
+            </div>
+
+            <div class="organizers-list">
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/sergeystar.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Сергей Старцев
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            webstartsev
+                        </div>
+                        <div class="organizers-text">
+                           Разработчик сайта IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/rodionpost.png" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Родион Постаногов
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            r0oxy404
+                        </div>
+                        <div class="organizers-text">
+                            Разработчик сайта IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/RomanPegushev.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Роман Пегушев
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            r0oxy404
+                        </div>
+                        <div class="organizers-text">
+                            Дизайнер сайта IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizers-item">
+                    <div class="organizers-pic">
+                        <img src="{{ "/img/organizers/andreyivolin.jpg" | url }}" class="organizers-img" alt="">
+                    </div>
+                    <div class="organizers-description">
+                        <div class="organizers-name">
+                            Андрей Иволин
+                        </div>
+                        <div class="organizers-telegram">
+                            <i class="fab fa-telegram-plane organizers-icon"></i>
+                            monty_pyton
+                        </div>
+                        <div class="organizers-text">
+                            Бренд-дизайнер IT-Sochi Community
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    {% include "blocks_to_include/_contacts_questions.html" %}
+
+{% endblock %}

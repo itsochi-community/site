@@ -1,6 +1,22 @@
 [project]
 name = itsochi
-themes = lektor-theme-itsochi, lektor-theme-itsochi-mvp
+themes = lektor-theme-itsochi
+locale = ru
 
-[servers.ghpages]
-target = ghpages://itsochi-community/site
+[servers.ghpages-https]
+target = ghpages+https://github.com/itsochi-community/site
+
+[packages]
+lektor-thumbnail-generator = 0.5.0
+lektor-i18n = 0.4.4
+
+[alternatives.ru]
+name = Russian
+primary = yes
+locale = ru
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
+

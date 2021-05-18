@@ -1,0 +1,8 @@
+{% for image in instagram_item.attachments.images.order_by('-pub_date').all() %}
+    <div class="pics-item">
+        <a href="{{ instagram_item.link }}">
+            <img class="pics-img" src="{{ image | url }}" alt=""
+                 role="presentation"/>
+        </a>
+    </div>
+{% endfor %}

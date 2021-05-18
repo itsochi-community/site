@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+    {% include '_header_menu_mobile.html' %}
+    <div class="page-top" style="background-color: transparent; margin-bottom: 0">
+        {% include "_header_menu.html" %}
+    </div>
+
+    <section class="meetup__blog">
+        <div class="meet-wrap">
+            {% for image in this.attachments.images %}
+                <div class="center__image">
+                    <div class="meetup__image">
+                        <img src="{{ image.thumbnail(1120, 630, mode="crop")| url }}" alt="Center image"
+                             class="meet__image">
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="meet-border">
+                <div class="meetup_items">
+
+                    <div class="meet__item meet-tem">
+                        <div class="meetup__text">
+                            <i class="far fa-calendar-alt meet-icon"></i>
+                            <strong>{{ this.date.strftime("%d %b") }}</strong>&nbsp;{{ this.date.strftime("%Y") }}
+                            &nbsp;|&nbsp; {{ this.time }}
+                        </div>
+                    </div>
+
+                    <div class="meet__item meet-tem">
+                        <div class="meetup__text">
+                            <i class="fas fa-map-marker-alt meet-icon"></i>
+                            {{ this.location }}
+                        </div>
+                    </div>
+                    {% if this.date > get_now().date() %}
+                        {% if this.registration %}
+                        <div class="meet__item">
+                            <a class="button button_color_yellow meet-button-clip" type="button" target="_blank"
+                               href="{{ this.link }}"><span
+                                    class="button-text">Зарегестрироваться</span><span
+                                    class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                            </a>
+                        </div>
+                            {% else %}
+                            <div class="meet__item">
+                            <div class="button button_color_grey meet-button-clip" type="button" target="_blank"><span
+                                    class="button-text">Зарегестрироваться</span><span
+                                    class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                            </div>
+                        </div>
+                            {% endif %}
+                    {% else %}
+                        <div class="meet__item">
+                            <div class="button button_color_grey meet-button-clip" type="button" target="_blank"><span
+                                    class="button-text">Зарегестрироваться</span><span
+                                    class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                            </div>
+                        </div>
+                    {% endif %}
+
+
+                </div>
+            </div>
+
+            <div class="meetup__information">
+                <div class="meet-invite">
+
+                    <div class="meet-sea"><img class="svg" src="{{ '/img/mission/sea.svg' | url }}" alt=""
+                                               role="presentation"/>
+                    </div>
+
+                    <div class="meet-points"><img class="svg" src="{{ '/img/mission/points.svg' | url }}" alt=""
+                                                  role="presentation"/>
+                    </div>
+
+                    <div class="meetup__title">
+                        {{ this.name }}
+                    </div>
+                </div>
+
+                <div class="event__description">
+                    <div class="meetup__description__information">
+                        {{ this.description }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'blocks_to_include/_contacts_questions.html' %}
+
+    </section>
+{% endblock %}

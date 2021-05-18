@@ -1,0 +1,11 @@
+<div class="allInvite">
+    {% include "events/_turn_over_events.html" %}
+    <div class="allInvite-eventList">
+        <div class="allInvite-wrap">
+            {% set events = site.query('/events').include_hidden(false).all() %}
+            {% for event in events %}
+                {% include "events/_item_for_list_on_main.html" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

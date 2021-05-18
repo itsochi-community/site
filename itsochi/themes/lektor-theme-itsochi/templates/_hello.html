@@ -1,0 +1,33 @@
+<section class="hello" id="hello">
+    <div class="hello-wrap">
+        <div class="hello-points"><img class="svg" src="{{ '/img/hello/points.svg' | url }}" alt=""
+                                       role="presentation"/>
+        </div>
+        <div class="hello-sea"><img class="svg" src="{{ '/img/hello/sea.svg' | url }}" alt="" role="presentation"/>
+        </div>
+        <div class="hello-girl"><img class="svg" src="{{ '/img/hello/girl.svg' | url }}" alt=""
+                                     role="presentation"/></div>
+        <div class="hello-description"><h1 class="hello-title">{% block title %}
+            {{ this.title }}
+        {% endblock %}</h1>
+            <div class="hello-cloud"><img class="svg" src="{{ '/img/icons/cloud.svg' | url }}" alt=""
+                                          role="presentation"/>
+            </div>
+            <div class="hello-text">
+                {% block body %}
+                    {{ this.body }}
+                {% endblock %}
+            </div>
+            <div class="hello-action">
+                <a class="button button_clip open-popup" href="{{ bag('links.telegram_link') }}" type="button"
+                   target="_blank"><span
+                        class="button-text">Присоединиться к сообществу</span><span
+                        class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                </a>
+            </div>
+        </div>
+        <div class="hello-swim"><img class="svg" src="{{ '/img/hello/swim.svg' | url }}" alt=""
+                                     role="presentation"/>
+        </div>
+    </div>
+</section>

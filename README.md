@@ -4,6 +4,10 @@ Install lektor SSG
     
     pip install lektor 
     
+Install ImageMagick
+
+    see: https://www.getlektor.com/docs/installation/#command-line-application
+    
 Run development server
        
     cd itsochi

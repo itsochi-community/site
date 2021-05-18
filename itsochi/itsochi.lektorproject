@@ -3,8 +3,8 @@ name = itsochi
 themes = lektor-theme-itsochi
 locale = ru
 
-[servers.ghpages-https]
-target = ghpages+https://github.com/itsochi-community/site
+[servers.ghpages]
+target = ghpages://itsochi-community/site
 
 [packages]
 lektor-thumbnail-generator = 0.5.0

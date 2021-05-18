@@ -4,7 +4,7 @@ themes = lektor-theme-itsochi
 locale = ru
 
 [servers.ghpages]
-target = ghpages://itsochi-community/site
+target = ghpages://itsochi-community/site?cname=itsochi.pro
 
 [packages]
 lektor-thumbnail-generator = 0.5.0

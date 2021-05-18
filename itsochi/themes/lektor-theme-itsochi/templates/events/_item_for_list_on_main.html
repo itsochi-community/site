@@ -1,0 +1,29 @@
+<div class="event swiper-slide-active">
+    <a class="event-wrap" href="{{ event | url }}">
+        <div class="event-pic">
+            {% for image in event.attachments.images.order_by('-date') %}
+                <img class="event-img"
+                     src="{{ image.thumbnail(310, 174, mode="crop") | url }}"
+                     alt=""
+                     role="presentation"/>
+            {% endfor %}
+            <div class="event-bg"></div>
+            {% if event.registration %}
+                <div class="event-register event-register_open">Регистрация открыта</div>
+            {% else %}
+                <div class="event-register">Регистрация окончена</div>
+            {% endif %}
+        </div>
+        <div class="event-content">
+            <div class="event-title">
+                {{ event.name }}.&nbsp;<br>{{ event.teaser }}
+            </div>
+            <div class="event-date">
+                {% include "svg/events_svg/item_for_list_on_main/_event_date.html" %}
+                {% if event.date %}
+                    <strong>{{ event.date.strftime("%d %b") }}</strong>&nbsp;{{ event.date.strftime("%Y") }}
+                {% endif %}
+            </div>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,33 @@
+{% set events = site.query('/events').include_hidden(false).all() %}
+{% for event in events %}
+    {% if event.pin %}
+        <a href="{{ event | url }}" class="mainEvent-link" target="_blank">
+            <div class="mainEvent">
+                {% for image in event.attachments.images %}
+                    <img class="mainEvent-img" src="{{ image.thumbnail(960, 400, mode='crop') | url }}" alt=""
+                         role="presentation"/>
+                {% endfor %}
+                <divs class="mainEvent-bg"></divs>
+                <div class="mainEvent-wrap">
+                    <div class="mainEvent-content">
+                        <div class="mainEvent-title">{{ event.name }}:&nbsp;<br>{{ event.teaser }}</div>
+                        <div class="mainEvent-description">
+                            {{ event.description | truncate(300, True) }}
+                            <div class="mainEvent-note">
+                                <div class="mainEvent-date">
+                                    {% include "svg/events_svg/detail_on_main/_main_event_date.html" %}
+                                    <strong>{{ event.date.strftime("%d %b") }}</strong>&nbsp;{{ event.date.strftime("%Y") }}
+                                </div>
+                                {% if event.registration %}
+                                    <div class="mainEvent-register mainEvent-register_open">Регистрация открыта</div>
+                                {% else %}
+                                    <div class="mainEvent-register">Регистрация окончена</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    {% endif %}
+{% endfor %}

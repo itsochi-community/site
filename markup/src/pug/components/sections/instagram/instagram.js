@@ -10,8 +10,8 @@ new Swiper('.pics', {
   touchEventsTarget: 'wrapper',
   initialSlide: 0,
   navigation: {
-    nextEl: '.instagram .arrow-right',
-    prevEl: '.instagram .arrow-left',
+    nextEl: '.instagram_list .arrow-right',
+    prevEl: '.instagram_list .arrow-left',
     disabledClass: 'disabled',
   },
   pagination: {

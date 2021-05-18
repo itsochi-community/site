@@ -1,0 +1,9 @@
+_model: events
+---
+title: Events
+---
+_hidden: no
+---
+_discoverable: no
+---
+_template: events.html

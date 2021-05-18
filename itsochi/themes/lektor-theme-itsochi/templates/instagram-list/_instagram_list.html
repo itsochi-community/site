@@ -1,0 +1,9 @@
+<div class="pics">
+    <div class="pics-wrap">
+        {% set instagram = site.query('/instagram').include_hidden(false).all() %}
+        {% for instagram_item in instagram %}
+            {% include "instagram-list/_instagram_item.html" %}
+        {% endfor %}
+    </div>
+    <div class="pics-pagination"></div>
+</div>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% include '_header_menu_mobile.html' %}
+    <div class="page-top">
+        {% include "_header_menu.html" %}
+        {% include '_hello.html' %}
+    </div>
+
+    <div class="page-content">
+        {% include '_mission.html' %}
+        {% include 'events/_section_on_main.html' %}
+        {% include 'blocks_to_include/_contacts_questions.html' %}
+        {% include 'instagram.html' %}
+    </div>
+        {% include '_footer.html' %}
+{% endblock %}

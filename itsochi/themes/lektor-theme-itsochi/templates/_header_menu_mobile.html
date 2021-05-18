@@ -1,0 +1,23 @@
+<div class="mobileMenu">
+    <div class="mobileMenu-content">
+        <div class="mobileMenu-header">
+            <div class="mobileMenu-logo">
+                <div class="logo"><img class="logo-img"
+                                       src="{{ "/img/logo.svg" | asseturl }}" alt=""
+                                       role="presentation"/></div>
+            </div>
+            <div class="toogleMenu toogleMenu_close"><img class="toogleMenu-img"
+                                                          src="{{ '/img/icons/close.svg'| asseturl }}"
+                                                          alt=""
+                                                          role="presentation"/></div>
+        </div>
+        <div class="mobileMenu-menu">
+            {% include "_menu_list.html" %}
+        </div>
+    </div>
+    <div class="mobileMenu-social">
+        <div class="socials socials_mobile">
+            {% include "blocks_to_include/_list_of_social_links.html" %}
+        </div>
+    </div>
+</div>

@@ -2750,6 +2750,10 @@ li, ul {
     padding-left: 5px;
 }
 
+.organizers-link {
+    color: black;
+}
+
 .policy-wrap {
     overflow: hidden;
     max-width: 1440px;

@@ -1,73 +1,93 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    {% include "_header_menu_mobile.html" %}
-    <div class="page-top" style="background-color: transparent; margin-bottom: 0;">
-        {% include "_header_menu.html" %}
-    </div>
+{% include "_header_menu_mobile.html" %}
+<div class="page-top" style="background-color: transparent; margin-bottom: 0;">
+    {% include "_header_menu.html" %}
+</div>
 
-    <section class="event-list">
-        <div class="list-wrap">
-            <div class="list-content">
-                {% set events = site.query('/events').include_hidden(false).all() %}
-                {% for event in events %}
+<section class="event-list">
+    <div class="list-wrap">
+        <div class="list-content">
+            {% set events = site.query('/events').include_hidden(false).all() %}
+            {% for event in events %}
 
-{#                    <div class="listEvent-decorate">#}
-{#                        <div class="listEvent-decorate-sea">#}
-{##}
-{#                            <div class="listEvent-sea"><img class="svg" src="{{ '/img/mission/sea.svg' | url }}" alt=""#}
-{#                                                            role="presentation"/>#}
-{#                            </div>#}
-{##}
-{#                        </div>#}
-{#                        <div class="listEvent-decorate-points">#}
-{##}
-{#                            <div class="listEvent-points"><img class="svg" src="{{ '/img/mission/points.svg' | url }}"#}
-{#                                                               alt=""#}
-{#                                                               role="presentation"/>#}
-{#                            </div>#}
-{##}
-{#                            <div class="listEvent-points points-second"><img class="svg" src="{{ '/img/mission/points.svg' | url }}"#}
-{#                                                               alt=""#}
-{#                                                               role="presentation"/>#}
-{#                            </div>#}
-{##}
-{#                        </div>#}
-{#                    </div>#}
-                    <a href="{{ event | url }}" class="mainEvent-link" target="_blank">
-                        <div class="mainEvent">
-                            {% for image in event.attachments.images %}
-                                <img class="listEvent-img" src="{{ image.thumbnail(1120, 450, mode='crop') | url }}"
-                                     alt=""
-                                     role="presentation"/>
-                            {% endfor %}
-                            <div class="listEvent-bg"></div>
-                            <div class="mainEvent-wrap">
-                                <div class="mainEvent-content">
-                                    <div class="mainEvent-title">{{ event.name }}:&nbsp;<br>{{ event.teaser }}</div>
-                                    <div class="mainEvent-description">
-                                        {{ event.description | truncate(400, True) }}
-                                        <div class="mainEvent-note">
-                                            <div class="mainEvent-date">
-                                                {% include "svg/events_svg/detail_on_main/_main_event_date.html" %}
-                                                <strong>{{ event.date.strftime("%d %b") }}</strong>&nbsp;{{ event.date.strftime("%Y") }}
-                                            </div>
-                                            {% if event.is_opened %}
-                                                <div class="mainEvent-register mainEvent-register_open">Регистрация
-                                                    открыта
-                                                </div>
-                                            {% endif %}
-                                        </div>
+            {#
+            <div class="listEvent-decorate">#}
+                {#
+                <div class="listEvent-decorate-sea">#}
+                    {##}
+                    {#
+                    <div class="listEvent-sea"><img class="svg" src="{{ '/img/mission/sea.svg' | url }}" alt="" #}
+                                                    {# role="presentation"/>#}
+                        {#
+                    </div>
+                    #}
+                    {##}
+                    {#
+                </div>
+                #}
+                {#
+                <div class="listEvent-decorate-points">#}
+                    {##}
+                    {#
+                    <div class="listEvent-points"><img class="svg" src="{{ '/img/mission/points.svg' | url }}" #}
+                                                       {# alt="" #}
+                                                       {# role="presentation"/>#}
+                        {#
+                    </div>
+                    #}
+                    {##}
+                    {#
+                    <div class="listEvent-points points-second"><img class="svg"
+                                                                     src="{{ '/img/mission/points.svg' | url }}" #}
+                                                                     {# alt="" #}
+                                                                     {# role="presentation"/>#}
+                        {#
+                    </div>
+                    #}
+                    {##}
+                    {#
+                </div>
+                #}
+                {#
+            </div>
+            #}
+            <a href="{{ event | url }}" class="mainEvent-link" target="_blank">
+                <div class="mainEvent">
+                    {% for image in event.attachments.images %}
+                    <img class="listEvent-img" src="{{ image.thumbnail(1120, 450, mode='crop') | url }}"
+                         alt=""
+                         role="presentation"/>
+                    {% endfor %}
+                    <div class="listEvent-bg"></div>
+                    <div class="mainEvent-wrap">
+                        <div class="mainEvent-content">
+                            <div class="mainEvent-title">{{ event.name }}:&nbsp;<br>{{ event.teaser }}</div>
+                            <div class="mainEvent-description">
+                                {{ event.description | truncate(200, True) }}
+                                <div class="mainEvent-note">
+                                    <div class="mainEvent-date">
+                                        {% include "svg/events_svg/detail_on_main/_main_event_date.html" %}
+                                        <strong>{{ event.date.strftime("%d %b") }}</strong>&nbsp;{{
+                                        event.date.strftime("%Y") }}
                                     </div>
+                                    {% if event.registration %}
+                                    <div class="mainEvent-register mainEvent-register_open">Регистрация открыта</div>
+                                    {% else %}
+                                    <div class="mainEvent-register">Регистрация окончена</div>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
-                    </a>
-                {% endfor %}
-            </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
         </div>
-    </section>
+    </div>
+</section>
 
-    {% include "blocks_to_include/_contacts_questions.html" %}
+{% include "blocks_to_include/_contacts_questions.html" %}
 
 {% endblock %}

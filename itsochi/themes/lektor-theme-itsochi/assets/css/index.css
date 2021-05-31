@@ -812,7 +812,7 @@ li, ul {
     position: relative
 }
 
-.event:hover .event-bg  {
+.event:hover .event-bg {
     display: none;
 }
 
@@ -851,7 +851,7 @@ li, ul {
     background: #1ede6f
 }
 
-.event:hover .event-register  {
+.event:hover .event-register {
     display: none;
 }
 
@@ -1257,6 +1257,15 @@ li, ul {
     margin: 0 auto;
     position: relative;
     z-index: 1
+}
+
+@media screen and (max-width: 800px) {
+    .contacts-content {
+        width: 350px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1
+    }
 }
 
 .contacts-title {

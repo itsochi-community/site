@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 17:39+MSK\n"
+"POT-Creation-Date: 2021-07-21 12:04+MSK\n"
 "PO-Revision-Date: 2021-05-04 16:56+MSK\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -36,4 +36,9 @@ msgstr ""
 #: http://localhost/events/hi-tech-sochi/
 #: (content/events/hi-tech-sochi/contents+ru.lr:event.date)
 msgid "2020-01-02"
+msgstr ""
+
+#: http://localhost/events/summersunset/
+#: (content/events/summersunset/contents+ru.lr:event.date)
+msgid "2021-07-23"
 msgstr ""

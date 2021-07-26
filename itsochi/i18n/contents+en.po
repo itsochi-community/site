@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-21 12:04+MSK\n"
+"POT-Creation-Date: 2021-07-26 11:52+MSK\n"
 "PO-Revision-Date: 2021-05-04 17:00+MSK\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,6 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: http://localhost/events/summersunset/
+#: (content/events/summersunset/contents+ru.lr:event.date)
+msgid "2021-07-23"
+msgstr ""
 
 #: http://localhost/events/tinkoffit-sochi/
 #: (content/events/tinkoffit-sochi/contents+ru.lr:event.date)
@@ -35,11 +40,6 @@ msgstr ""
 #: http://localhost/events/hi-tech-sochi/
 #: (content/events/hi-tech-sochi/contents+ru.lr:event.date)
 msgid "2020-01-02"
-msgstr ""
-
-#: http://localhost/events/summersunset/
-#: (content/events/summersunset/contents+ru.lr:event.date)
-msgid "2021-07-23"
 msgstr ""
 
 #~ msgid "2021-04-14"

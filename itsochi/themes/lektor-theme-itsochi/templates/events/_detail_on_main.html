@@ -12,14 +12,14 @@
                     <div class="mainEvent-content">
                         <div class="mainEvent-title">{{ event.name }}:&nbsp;<br>{{ event.teaser }}</div>
                         <div class="mainEvent-description">
-                            {{ event.description | truncate(300, True) }}
+                            {{ event.description | truncate(210, True) }}
                             <div class="mainEvent-note">
                                 <div class="mainEvent-date">
                                     {% include "svg/events_svg/detail_on_main/_main_event_date.html" %}
                                     <strong>{{ event.date.strftime("%d %b") }}</strong>&nbsp;{{ event.date.strftime("%Y") }}
                                 </div>
                                 {% if event.registration %}
-                                    <div class="mainEvent-register mainEvent-register_open">Регистрация открыта</div>
+                                    <div class="mainEvent-register mainEvent-register-open">Регистрация открыта</div>
                                 {% else %}
                                     <div class="mainEvent-register">Регистрация окончена</div>
                                 {% endif %}

@@ -123,7 +123,7 @@
         slidesPerView: 1,
         touchEventsTarget: "wrapper",
         initialSlide: 0,
-        navigation: {nextEl: ".instagram_list .arrow-right", prevEl: ".instagram_list .arrow-left", disabledClass: "disabled"},
+        navigation: {nextEl: ".instagram .arrow-right", prevEl: ".instagram .arrow-left", disabledClass: "disabled"},
         pagination: {el: ".pics-pagination", type: "bullets"},
         breakpoints: {375: {spaceBetween: 16}, 640: {initialSlide: 1, spaceBetween: 16, slidesPerView: 4}}
     });

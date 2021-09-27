@@ -10,19 +10,5 @@
 {% endblock %}
 <script src="{{ '/js/vendors.js' | asseturl }}"></script>
 <script src="{{ '/js/index.js'| asseturl }}"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        let temp = document.querySelectorAll('.event-pic');
-
-        temp.forEach(function (currentItem) {
-            let qwe = currentItem.querySelector('.event-register');
-
-            if (qwe.classList.contains('event-register-open')) {
-                console.log(currentItem);
-                currentItem.querySelector('.event-bg').remove();
-            }
-        })
-    });
-</script>
 </body>
 </html>

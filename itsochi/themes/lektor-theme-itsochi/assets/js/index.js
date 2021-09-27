@@ -144,3 +144,14 @@
         }))
     }))
 }]);
+window.addEventListener('DOMContentLoaded', () => {
+        let temp = document.querySelectorAll('.event-pic');
+
+        temp.forEach(function (currentItem) {
+            let qwe = currentItem.querySelector('.event-register');
+
+            if (qwe.classList.contains('event-register-open')) {
+                currentItem.querySelector('.event-bg').remove();
+            }
+        })
+    });

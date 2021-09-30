@@ -830,7 +830,7 @@ li, ul {
 
 .event-register {
     position: absolute;
-    top: 116px;
+    top: 24px;
     left: 24px;
     color: #fff;
     display: -webkit-box;
@@ -842,10 +842,8 @@ li, ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(16px);
-    border-radius: 100px;
-    padding: 8px 16px;
+    transition: opacity .4s ease-in-out;
+    opacity: 1;
 }
 
 .event-register:before {
@@ -862,9 +860,9 @@ li, ul {
     background: #1ede6f
 }
 
-/*.event:hover .event-register {*/
-/*    display: none;*/
-/*}*/
+.event:hover .event-register {
+    opacity: 0;
+}
 
 .event-content {
     height: 100%;

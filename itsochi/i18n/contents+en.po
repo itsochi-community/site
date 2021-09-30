@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 15:41+MSK\n"
+"POT-Creation-Date: 2021-09-30 20:11+MSK\n"
 "PO-Revision-Date: 2021-05-04 17:00+MSK\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,6 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: http://localhost/events/global-day-of-coderetreat-2021-sochi/
+#: (content/events/global-day-of-coderetreat-2021-sochi/contents+ru.lr:event.date)
+msgid "2021-10-17"
+msgstr ""
 
 #: http://localhost/events/yandexgoanditsochi/
 #: (content/events/yandexgoanditsochi/contents+ru.lr:event.date)

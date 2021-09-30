@@ -633,7 +633,12 @@ li, ul {
 }
 
 .mainEvent-bg {
-    background: rgba(100, 12, 222, .8)
+    background: rgba(0, 0, 0, .8);
+    transition: background-color 500ms ease-out 100ms;
+}
+
+.mainEvent:hover .mainEvent-bg{
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .mainEvent-content {
@@ -790,6 +795,7 @@ li, ul {
 }
 
 .event-bg {
+    transition: background-color 500ms ease-out 100ms;
     background: rgba(29, 29, 29, .8);
     position: absolute;
     top: 0;
@@ -813,7 +819,8 @@ li, ul {
 }
 
 .event:hover .event-bg {
-    display: none;
+    background-color: transparent;
+    /*display: none;*/
 }
 
 .event-bg, .event-img {
@@ -834,7 +841,9 @@ li, ul {
     align-items: center;
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px
+    line-height: 24px;
+    transition: opacity .4s ease-in-out;
+    opacity: 1;
 }
 
 .event-register:before {
@@ -852,7 +861,7 @@ li, ul {
 }
 
 .event:hover .event-register {
-    display: none;
+    opacity: 0;
 }
 
 .event-content {

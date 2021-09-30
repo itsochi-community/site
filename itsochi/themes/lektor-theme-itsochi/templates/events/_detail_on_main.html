@@ -12,7 +12,7 @@
                     <div class="mainEvent-content">
                         <div class="mainEvent-title">{{ event.name }}:&nbsp;<br>{{ event.teaser }}</div>
                         <div class="mainEvent-description">
-                            {{ event.description | truncate(210, True) }}
+                            {{ event.description | truncate(120, True) }}
                             <div class="mainEvent-note">
                                 <div class="mainEvent-date">
                                     {% include "svg/events_svg/detail_on_main/_main_event_date.html" %}

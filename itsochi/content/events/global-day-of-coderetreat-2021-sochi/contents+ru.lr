@@ -8,7 +8,7 @@ link: https://hi-tech-sochi.timepad.ru/event/1790575/
 ---
 location: ул.Транспортная д.78/6
 ---
-registration: yes
+registration: no
 ---
 time: 13:00 - 17:00
 ---
@@ -16,4 +16,4 @@ image: coderetreat-1120x630.png
 ---
 teaser: Мы запускаем наш первый Coderetreat.
 ---
-pin: yes
+pin: no

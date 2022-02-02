@@ -1259,7 +1259,7 @@ li, ul {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 72px
+    padding: 72px 0 25px 0;
 }
 
 .contacts-content {
@@ -2909,6 +2909,7 @@ li, ul {
         width: 100%;
         text-align: center;
         padding: 25px 10px;
+        margin: 0 auto;
     }
 }
 

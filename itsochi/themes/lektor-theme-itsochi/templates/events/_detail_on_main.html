@@ -1,7 +1,7 @@
 {% set events = site.query('/events').include_hidden(false).all() %}
 {% for event in events %}
     {% if event.pin %}
-        <a href="{{ event | url }}" class="mainEvent-link" target="_blank">
+        <a href="{{ event | url }}" class="mainEvent-link">
             <div class="mainEvent">
                 {% for image in event.attachments.images %}
                     <img class="mainEvent-img" src="{{ image.thumbnail(960, 400, mode='crop') | url }}" alt=""

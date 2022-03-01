@@ -1,7 +1,7 @@
 [project]
 name = itsochi
 themes = lektor-theme-itsochi
-locale = en
+locale = ru
 
 [servers.ghpages]
 target = ghpages://itsochi-community/site?cname=itsochi.pro

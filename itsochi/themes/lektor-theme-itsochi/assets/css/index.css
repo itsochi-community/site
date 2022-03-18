@@ -2865,21 +2865,23 @@ li, ul {
 .partners-items {
     width: 100%;
     display: flex;
-    /*align-content: center;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+    align-items: flex-end
 }
 
 .partners-item {
     text-align: center;
     margin: 0 10px;
-    width: 20%;
+    width: 20%
 }
 
 .partners-item-yandex {
     margin: 0 10px;
     width: 20%;
     text-align: right;
+}
+
+.partners-item-pycon {
+    padding-left: 30px
 }
 
 .partners-item-tinkoff {
@@ -2905,7 +2907,7 @@ li, ul {
 }
 
 @media screen and (max-width: 600px) {
-    .partners-item, .partners-item-yandex, .partners-item-tinkoff {
+    .partners-item, .partners-item-yandex, .partners-item-tinkoff, .partners-item-pycon {
         width: 100%;
         text-align: center;
         padding: 25px 10px;

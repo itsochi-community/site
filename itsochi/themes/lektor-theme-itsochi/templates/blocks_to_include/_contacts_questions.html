@@ -21,9 +21,15 @@
                         Обратная связь
                     </a>
                 </div>
+                <div class="contacts-item">
+                    <img src="{{ '/img/icons/microphone.svg' }}" alt="" class="contacts-feedback-icon">
+                    <a href="{{ bag('links.become_a_speaker') }}" class="contacts-value" target="_blank">
+                        Стать спикером
+                    </a>
+                </div>
                 <a href="{{ "/organizers" | url }}" class="contacts-item">
-                {% include 'svg/contact_questions/_organizers.html' %}
-                <div class="contacts-value">Организаторы и контрибьютеры</div>
+                    {% include 'svg/contact_questions/_organizers.html' %}
+                    <div class="contacts-value">Организаторы и контрибьютеры</div>
                 </a>
                 <div class="contacts-sepor"></div>
                 <div class="contacts-item">
@@ -68,8 +74,8 @@
                     <div class="github-text">Поможем его улучшить?</div>
                 </div>
                 <a class="github-fork" href="{{ bag("links.github_link") }}" target="_blank">
-                {% include 'svg/contact_questions/_github.html' %}
-                Fork on Github</a></div>
+                    {% include 'svg/contact_questions/_github.html' %}
+                    Fork on Github</a></div>
             <div class="contacts-footer">
                 <a href="{{ '/privacy-policy' | url }}" class="contacts-link">Политика безопасности</a>
                 <div class="contacts-slash">/</div>

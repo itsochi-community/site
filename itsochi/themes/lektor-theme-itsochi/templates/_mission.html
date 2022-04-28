@@ -7,12 +7,10 @@
         </div>
         <div class="mission-description"><h1 class="mission-title">Наша миссия</h1>
             <div class="mission-text">Обьединеняем между собой специалистов, которые живут в Сочи,<br/>переехали на
-                ПМЖ или
-                находятся в командировке
+                ПМЖ или находятся в командировке
             </div>
             <div class="mission-center">
                 <img class="mission-ellipse" src="{{ '/img/mission/sun.svg' | asseturl }}" alt="">
-<!--                <div class="mission-ellipse"></div>-->
             </div>
         </div>
         <div class="mission-content">
@@ -25,18 +23,20 @@
                 </div>
                 <div class="weAre">
                     <div class="weAre-title">Нас уже</div>
-                    <div class="weAre-specialists"><b>>800</b><span class="icons">👨‍👩‍</span><br/>специалистов
+                    <div class="weAre-specialists">
+                        <b>>815</b><span class="icons">👨‍👩‍</span><br/>специалистов
                     </div>
                 </div>
             </div>
             <div class="mission-blocks">
                 <div class="missions">
                     <div class="missions-wrap">
+
                         <div class="block swiper-slide-active" style="width: 309.333px; margin-right: 16px;">
                             <div class="block-wrap">
-                                <div class="block-pic"><img class="block-img"
-                                                            src="{{ '/img/mission/programming.png' | url }}" alt=""
-                                                            role="presentation"/></div>
+                                <div class="block-pic">
+                                    <img class="block-img" src="{{ '/img/mission/programming.png' | url }}" alt="" role="presentation"/>
+                                </div>
                                 <div class="block-content">
                                     <div class="block-title">Образование</div>
                                     <div class="block-description">Неважно, новичок или умудрённый двадцатилетним
@@ -45,11 +45,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="block swiper-slide-active" style="width: 309.333px; margin-right: 16px;">
                             <div class="block-wrap">
-                                <div class="block-pic"><img class="block-img"
-                                                            src="{{ 'img/mission/connection.png' | url }}" alt=""
-                                                            role="presentation"/></div>
+                                <div class="block-pic">
+                                    <img class="block-img" src="{{ 'img/mission/connection.png' | url }}" alt="" role="presentation"/>
+                                </div>
                                 <div class="block-content">
                                     <div class="block-title">Нетворкинг</div>
                                     <div class="block-description">Создаем пространство для&nbsp;<b>живого
@@ -59,11 +60,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="block swiper-slide-active" style="width: 309.333px; margin-right: 16px;">
                             <div class="block-wrap">
-                                <div class="block-pic"><img class="block-img" src="{{ 'img/mission/magic.png' | url }}"
-                                                            alt=""
-                                                            role="presentation"/></div>
+                                <div class="block-pic">
+                                    <img class="block-img" src="{{ 'img/mission/magic.png' | url }}" alt="" role="presentation"/>
+                                </div>
                                 <div class="block-content">
                                     <div class="block-title">Организация</div>
                                     <div class="block-description">В рамках сообщества проводятся митапы,
@@ -77,9 +79,12 @@
                 </div>
             </div>
             <div class="mission-actions">
-                <a class="button button_color_yellow button_clip" href="{{ bag('links.telegram_link') }}" target="_blank" type="button"><span
-                        class="button-text">Присоединиться к сообществу</span><span
-                        class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                <a class="button button_color_yellow button_clip" href="{{ bag('links.telegram_link') }}" target="_blank" type="button">
+                    <span
+                        class="button-text">Присоединиться к сообществу</span>
+                    <span
+                        class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}
+                    </span>
                 </a>
                 <div class="socials socials_inContent" style="margin-left:8px">
                     {% include "blocks_to_include/_list_of_social_links.html" %}

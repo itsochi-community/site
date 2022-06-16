@@ -2936,7 +2936,10 @@ li, ul {
 
 .speaker-wrap {
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
     max-width: 1440px;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -2955,9 +2958,10 @@ li, ul {
 
 .speaker-list {
     display: flex;
-    width: 100%;
-    margin: 20px auto;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 80%;
+    margin: 20px auto;
 }
 
 .speaker-item {
@@ -2966,10 +2970,7 @@ li, ul {
     background-color: #FFFFFF;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.speaker-list :not(:first-child):not(:last-child) {
-    margin: 0 32px;
+    margin: 0 10px 20px 10px;
 }
 
 .speaker-avatar {

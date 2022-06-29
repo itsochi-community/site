@@ -2864,7 +2864,7 @@ li, ul {
 .partners-items {
     width: 100%;
     display: flex;
-    align-items: flex-end
+    align-items: center;
 }
 
 .partners-item {
@@ -2879,8 +2879,9 @@ li, ul {
     text-align: right;
 }
 
-.partners-item-pycon {
-    padding-left: 30px
+.partners-item-inside {
+    padding-left: 40px;
+    width: 20%;
 }
 
 .partners-item-tinkoff {
@@ -2906,7 +2907,7 @@ li, ul {
 }
 
 @media screen and (max-width: 600px) {
-    .partners-item, .partners-item-yandex, .partners-item-tinkoff, .partners-item-pycon {
+    .partners-item, .partners-item-yandex, .partners-item-tinkoff, .partners-item-inside {
         width: 100%;
         text-align: center;
         padding: 25px 10px;

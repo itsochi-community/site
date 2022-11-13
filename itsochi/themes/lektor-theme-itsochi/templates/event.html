@@ -37,21 +37,22 @@
                     </div>
                     {% if this.date > get_now().date() %}
                         {% if this.registration %}
-                        <div class="meet__item">
-                            <a class="button button_color_yellow meet-button-clip" type="button" target="_blank"
-                               href="{{ this.link }}"><span
-                                    class="button-text">Зарегистрироваться</span><span
-                                    class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
-                            </a>
-                        </div>
-                            {% else %}
                             <div class="meet__item">
-                            <div class="button button_color_grey meet-button-clip" type="button" target="_blank"><span
-                                    class="button-text">Зарегестрироваться</span><span
-                                    class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                                <a class="button button_color_yellow meet-button-clip" type="button" target="_blank"
+                                   href="{{ this.link }}"><span
+                                        class="button-text">Зарегистрироваться</span><span
+                                        class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                                </a>
                             </div>
-                        </div>
-                            {% endif %}
+                        {% else %}
+                            <div class="meet__item">
+                                <div class="button button_color_grey meet-button-clip" type="button"
+                                     target="_blank"><span
+                                        class="button-text">Зарегестрироваться</span><span
+                                        class="button-icon">{% include "svg/button_icon_svg/button_icon.html" %}</span>
+                                </div>
+                            </div>
+                        {% endif %}
                     {% else %}
                         <div class="meet__item">
                             <div class="button button_color_grey meet-button-clip" type="button" target="_blank"><span
@@ -86,6 +87,13 @@
                         {{ this.description }}
                     </div>
                 </div>
+
+            </div>
+        </div>
+
+        <div class="speaker-list">
+            <div class="speaker-item">
+                {{ this.speaker }}
             </div>
         </div>
 

@@ -91,11 +91,13 @@
             </div>
         </div>
 
-        <div class="speaker-list">
-            <div class="speaker-item">
-                {{ this.speaker }}
+        {% if this.speaker %}
+            <div class="speaker-list">
+                <div class="speaker-item">
+                    {{ this.speaker }}
+                </div>
             </div>
-        </div>
+        {% endif %}
 
     </section>
 

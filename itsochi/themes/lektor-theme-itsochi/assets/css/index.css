@@ -2923,3 +2923,7 @@ li, ul {
     background: linear-gradient(to top right, #fff 50%, #fece2f 52%);
     display: block;
 }
+
+.block-text {
+    margin-top: 10px;
+}

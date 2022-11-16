@@ -69,12 +69,18 @@
             <div class="meetup__information">
                 <div class="meet-invite">
 
-                    <div class="meet-sea"><img class="svg" src="{{ '/img/mission/sea.svg' | url }}" alt=""
-                                               role="presentation"/>
+                    <div class="meet-sea">
+                        <img class="svg"
+                             src="{{ '/img/mission/sea.svg' | url }}"
+                             alt=""
+                             role="presentation"/>
                     </div>
 
-                    <div class="meet-points"><img class="svg" src="{{ '/img/mission/points.svg' | url }}" alt=""
-                                                  role="presentation"/>
+                    <div class="meet-points">
+                        <img class="svg"
+                             src="{{ '/img/mission/points.svg' | url }}"
+                             alt=""
+                             role="presentation"/>
                     </div>
 
                     <div class="meetup__title">
@@ -82,11 +88,20 @@
                     </div>
                 </div>
 
-                <div class="event__description">
-                    <div class="meetup__description__information">
-                        {{ this.description }}
+                {# FIXME: redo temporary solution #}
+                {% if this.description_section %}
+                    <div class="event__description">
+                        <div class="meetup__description__information">
+                            {{ this.description_section }}
+                        </div>
                     </div>
-                </div>
+                {% else %}
+                    <div class="event__description">
+                        <div class="meetup__description__information">
+                            {{ this.description }}
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
 

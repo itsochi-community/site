@@ -1,18 +1,20 @@
 {% set speaker_model = site.query('/speakers').filter(F.name == this.speaker_id) %}
 
 {% for speaker in speaker_model %}
-    <div class="speaker-avatar">
-        {% for image in speaker.attachments.images %}
-            <img src="{{ image.thumbnail(300, 256, mode="crop")| url }}" alt="Center image" class="speaker-avatar">
-        {% endfor %}
-    </div>
-
-    <div class="speaker-info">
-        <div class="speaker-name">
-            {{ speaker.name }}
+    <div class="speaker-item">
+        <div class="speaker-avatar">
+            {% for image in speaker.attachments.images %}
+                <img src="{{ image.thumbnail(300, 256, mode="crop")| url }}" alt="Center image" class="speaker-avatar">
+            {% endfor %}
         </div>
-        <div class="speaker-content">
-            {{ speaker.description }}, {{ speaker.company }}
+
+        <div class="speaker-info">
+            <div class="speaker-name">
+                {{ speaker.name }}
+            </div>
+            <div class="speaker-content">
+                {{ speaker.description }}, {{ speaker.company }}
+            </div>
         </div>
     </div>
 {% endfor %}

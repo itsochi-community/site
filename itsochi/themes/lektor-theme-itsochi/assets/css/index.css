@@ -2550,6 +2550,11 @@ li, ul {
     margin-top: 15px;
 }
 
+.meetup_location_link {
+    text-decoration: underline;
+    color: #000000;
+}
+
 .meet-icon {
     padding-right: 5px;
 }

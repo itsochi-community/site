@@ -33,7 +33,7 @@
                         <div class="meetup__text">
                             <i class="fas fa-map-marker-alt meet-icon"></i>
                             {% if this.link_to_location %}
-                                <a class="meetup_location_link" href="{{ this.link_to_location }}">{{ this.location }}</a>
+                                <a class="meetup_location_link" href="{{ this.link_to_location }}" target="_blank">{{ this.location }}</a>
                             {% else %}
                                 {{ this.location }}
                             {% endif %}

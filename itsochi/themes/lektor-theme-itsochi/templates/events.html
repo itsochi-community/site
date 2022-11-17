@@ -12,48 +12,7 @@
             {% set events = site.query('/events').include_hidden(false).all() %}
             {% for event in events %}
 
-            {#
-            <div class="listEvent-decorate">#}
-                {#
-                <div class="listEvent-decorate-sea">#}
-                    {##}
-                    {#
-                    <div class="listEvent-sea"><img class="svg" src="{{ '/img/mission/sea.svg' | url }}" alt="" #}
-                                                    {# role="presentation"/>#}
-                        {#
-                    </div>
-                    #}
-                    {##}
-                    {#
-                </div>
-                #}
-                {#
-                <div class="listEvent-decorate-points">#}
-                    {##}
-                    {#
-                    <div class="listEvent-points"><img class="svg" src="{{ '/img/mission/points.svg' | url }}" #}
-                                                       {# alt="" #}
-                                                       {# role="presentation"/>#}
-                        {#
-                    </div>
-                    #}
-                    {##}
-                    {#
-                    <div class="listEvent-points points-second"><img class="svg"
-                                                                     src="{{ '/img/mission/points.svg' | url }}" #}
-                                                                     {# alt="" #}
-                                                                     {# role="presentation"/>#}
-                        {#
-                    </div>
-                    #}
-                    {##}
-                    {#
-                </div>
-                #}
-                {#
-            </div>
-            #}
-            <a href="{{ event | url }}" class="mainEvent-link" target="_blank">
+            <a href="{{ event | url }}" class="mainEvent-link">
                 <div class="mainEvent">
                     {% for image in event.attachments.images %}
                     <img class="listEvent-img" src="{{ image.thumbnail(1120, 450, mode='crop') | url }}"

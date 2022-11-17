@@ -2550,6 +2550,11 @@ li, ul {
     margin-top: 15px;
 }
 
+.meetup_location_link {
+    text-decoration: underline;
+    color: #000000;
+}
+
 .meet-icon {
     padding-right: 5px;
 }
@@ -2922,4 +2927,73 @@ li, ul {
     background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #fff), color-stop(52%, #fece2f));
     background: linear-gradient(to top right, #fff 50%, #fece2f 52%);
     display: block;
+}
+
+.block-text {
+    margin-top: 10px;
+}
+
+.speaker {
+    overflow: hidden;
+}
+
+.speaker-wrap {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.speaker-header-wrap {
+    max-width: 673px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.speaker-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    z-index: 1;
+}
+
+.speaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.speaker-item {
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 20px 10px;
+}
+
+.speaker-avatar {
+    border-radius: 12px 12px 0 0;
+}
+
+.speaker-info {
+    margin: 12px;
+}
+
+.speaker-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.speaker-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
 }

@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    {% include "_header_menu_mobile.html" %}
+    <div class="page-top" style="background-color: transparent; margin-bottom: 0;">
+        {% include "_header_menu.html" %}
+    </div>
+
+    <section class="speaker">
+        <div class="speaker-wrap">
+
+            <div class="speaker-header-wrap">
+                <h1 class="speaker-header">Спикеры сообщества</h1>
+            </div>
+
+            <div class="speaker-list">
+                {% set speakers = site.query('/speakers').all() %}
+
+                {% include 'speaker.html' %}
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

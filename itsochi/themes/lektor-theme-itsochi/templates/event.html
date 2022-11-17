@@ -107,5 +107,20 @@
 
     </section>
 
+    {% if this.speaker %}
+        <section class="speaker">
+            <div class="speaker-wrap">
+
+                <div class="speaker-header-wrap">
+                    <h1 class="speaker-header">Спикеры мероприятия</h1>
+                </div>
+
+                <div class="speaker-list">
+                    {{ this.speaker }}
+                </div>
+            </div>
+        </section>
+    {% endif %}
+
     {% include 'blocks_to_include/_contacts_questions.html' %}
 {% endblock %}

@@ -32,7 +32,11 @@
                     <div class="meet__item meet-tem">
                         <div class="meetup__text">
                             <i class="fas fa-map-marker-alt meet-icon"></i>
-                            {{ this.location }}
+                            {% if this.link_to_location %}
+                                <a class="meetup_location_link" href="{{ this.link_to_location }}">{{ this.location }}</a>
+                            {% else %}
+                                {{ this.location }}
+                            {% endif %}
                         </div>
                     </div>
                     {% if this.date > get_now().date() %}
